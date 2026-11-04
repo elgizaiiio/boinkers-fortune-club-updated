@@ -7,12 +7,11 @@ export interface Tier { need: number; reward: EventReward; price?: { ton: number
 export interface EventDef { key: string; name: string; hours: 24 | 48; offsetH: number; allFree?: boolean; scale: number }
 
 export const LIVE_EVENTS: EventDef[] = [
-  { key: "house", name: "Tabletop Frenzy", hours: 24, offsetH: 0, scale: 1 },
-  { key: "dice", name: "Game Night", hours: 48, offsetH: 6, scale: 1.5 },
-  { key: "ghost", name: "Spooky Stitch", hours: 24, offsetH: 12, allFree: true, scale: 0.8 },
-  { key: "crown", name: "Royal Heist", hours: 48, offsetH: 18, scale: 2 },
-  { key: "mushroom", name: "Mushroom Trail", hours: 24, offsetH: 4, allFree: true, scale: 1 },
-  { key: "candy", name: "Candy Rush", hours: 48, offsetH: 30, scale: 1.2 },
+  { key: "neon-soda", name: "Neon Soda Rush", hours: 24, offsetH: 0, scale: 1.1 },
+  { key: "sun-crystal", name: "Solar Crystal Hunt", hours: 48, offsetH: 6, scale: 1.6 },
+  { key: "ice-orb", name: "Ice Orb Expedition", hours: 24, offsetH: 12, allFree: true, scale: 0.9 },
+  { key: "volcano", name: "Volcano Jackpot", hours: 48, offsetH: 18, scale: 2.2 },
+  { key: "robot", name: "Robo Arcade", hours: 24, offsetH: 4, allFree: true, scale: 1.2 },
 ];
 
 export const PAID_PRICE = { ton: 0.25, stars: 25 };
